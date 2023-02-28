@@ -21,9 +21,21 @@ function getFinalResult() {
   })
   finalResult = result / coefficientsValue
   resultContainer.classList.add('show')
-  resultEl.innerText = `: ${finalResult}`
+  resultEl.innerText = `: ${round(finalResult)}`
 
   // restart
   result = 0
   coefficientsValue = 0
+  window.scrollTo(0, document.body.scrollHeight)
+}
+
+function round(number) {
+  const integer = number.toString().split('.')[0]
+  const fraction = number.toString().split('.')[1]
+
+  if (fraction) {
+    return `${integer}.${fraction.slice(0, 2)}`
+  } else {
+    return number
+  }
 }
