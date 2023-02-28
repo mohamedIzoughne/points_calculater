@@ -1,0 +1,90 @@
+body {
+  text-align: right;
+  background-color: #537fe7;
+  background-repeat: no-repeat;
+}
+
+* {
+  text-align: right;
+}
+
+.remark,
+.result {
+  width: 300px;
+  max-width: calc(100% - 20px);
+  background-color: white;
+  padding: 14px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 5px solid #48e8f7;
+}
+
+.result {
+  display: none;
+  padding: 5px 14px;
+}
+
+.result.show {
+  display: block;
+}
+
+.table {
+  margin-top: 50px;
+  width: 400px;
+  max-width: calc(100% - 20px);
+  margin-left: auto;
+  background-color: white;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+}
+
+.table .row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.table .col {
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  flex: 1;
+}
+
+.table .row:first-child {
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bold;
+}
+
+.table input {
+  border: none;
+  outline: none;
+  background-color: #c0eef2;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}

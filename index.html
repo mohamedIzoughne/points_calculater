@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>pointsCalculator</title>
+  </head>
+  <body>
+    <div class="remark">
+      <p>
+        .يمكنك معرفة معدل كل مادة عن طريق جمع نقط الفروض ثم قسمتها على عدد هاته
+        الفروض
+      </p>
+      <p>يمكنك أيضا تغيير المعامل في حال كان غير مناسب لشعبتك</p>
+    </div>
+    <div class="table">
+      <div class="row header">
+        <div class="col">المادة</div>
+        <div class="col">النقطة</div>
+        <div class="col">المعامل</div>
+      </div>
+      <div class="row">
+        <div class="col">الرباضبات</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="7" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">الفيزياء</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="7" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">علوم الحياة والأرض</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="5" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">الانجليزية</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="2" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">الفرنسية</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="2" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">العربية</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="2" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">الفلسفة</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="2" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">التربية الاسلامية</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="2" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">التربية البدنية</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="4" min="1" />
+      </div>
+      <div class="row">
+        <div class="col">المواطبة والسلوك</div>
+        <input type="number" class="col grade" value="10" min="0" max="20" />
+        <input type="number" class="col coefficient" value="1" min="1" />
+      </div>
+    </div>
+    <button class="submit-btn">أحسب</button>
+    <div class="result">
+      <p>
+        النتيجة
+        <span></span>
+      </p>
+    </div>
+  </body>
+  <script src="app.js" type="module"></script>
+</html>
